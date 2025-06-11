@@ -27,7 +27,7 @@
 int main(void){
     Query::TextQuery tq("../src/test.cc");
 
-    auto display = [&](Query::Query q){
+    auto display = [&](const Query::Query& q){
         std::cout << *q.eval(tq) << std::endl;
     };
 
